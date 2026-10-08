@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+:root{
+  --green:#145b4a;--green2:#1d705b;--bg:#f2f6f5;--text:#18352f;
+  --muted:#5e6870;--white:#fff
+}
+body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text)}
+.topbar{height:100px;background:linear-gradient(110deg,#104f40,#176953);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 34px;gap:25px}
+.brand{display:flex;align-items:center;gap:20px}.brand-icon{font-size:50px;line-height:1;transform:rotate(0deg)}
+.brand strong{display:block;font-family:Georgia,serif;font-size:31px;letter-spacing:.5px}
+.brand span{display:block;font-size:14px;letter-spacing:1px;margin-top:3px}
+.top-actions{display:flex;align-items:center;gap:18px}.search{width:390px;height:56px;border-radius:11px;background:#ffffff18;border:1px solid #ffffff12;display:flex;align-items:center;padding:0 18px;font-size:29px}
+.search span{font-size:15px;margin-left:10px;color:#e6f1ed}.hymnal{height:56px;padding:0 22px;border:0;border-radius:11px;background:#ffffff1d;color:white;font-size:15px;font-weight:700}
+.layout{display:grid;grid-template-columns:235px 1fr;gap:18px;min-height:calc(100vh - 145px)}
+.sidebar{background:#eef5f4;padding:28px 22px;border-radius:0 0 14px 0}
+.sidebar h2{font-family:Georgia,serif;margin:8px 0 28px;font-size:22px}.sidebar nav{display:flex;flex-direction:column;gap:9px}
+.sidebar a{text-decoration:none;color:#46566c;padding:15px 18px;border-radius:11px;font-size:17px;font-weight:600}
+.sidebar a.active{background:#d9eae6;color:#155847}.content{padding:14px 18px 25px 0}
+.hero{height:193px;border-radius:13px;overflow:hidden;margin-bottom:14px;background:
+linear-gradient(90deg,#171714e8,#3a2b1c99,#17110a55),
+radial-gradient(circle at 70% 25%,#e8d1a0 0 5%,transparent 6%),
+linear-gradient(135deg,#30271d,#aa794c 50%,#201810)}
+.hero-overlay{padding:29px 40px;color:white}.hero h1{font:700 48px Georgia,serif;margin:0 0 4px}.hero p{font-size:23px;margin:0 0 14px}.date{display:inline-block;padding:9px 13px;border-radius:9px;background:#20241fbb;font-size:14px}
+.liturgia-card{min-height:112px;border-radius:13px;background:#fff;margin:14px 0;border:1px solid #dce5e3;display:grid;grid-template-columns:95px minmax(250px,1fr) 520px 30px;align-items:center;padding:16px 22px;gap:18px;position:relative;overflow:hidden}
+.liturgia-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px}.call:before{background:#21825f}.adoration:before{background:#e88b00}.contrition:before{background:#d62735}.communion:before{background:#5a3ca6}.closing:before{background:#2582cf}
+.call{background:linear-gradient(90deg,#fff,#f7fbfa)}.adoration{background:#fffaf3}.contrition{background:#fff5f6}.communion{background:#f7f7ff}.closing{background:#f4f9ff}
+.icon{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;font-size:32px;font-weight:700;background:#dff0e9;color:#16664f}.adoration .icon{background:#ffe6c4;color:#cf7200}.contrition .icon{background:#ffd8dd;color:#bd2532}.communion .icon{background:#e4dcfb;color:#56399c}.closing .icon{background:#d5eaff;color:#1971bd}
+.card-text h2{font:700 25px Georgia,serif;margin:0 0 8px}.card-text h3{font-size:19px;margin:0 0 7px;color:#132d27}.card-text p{margin:0;color:#56606b;font-size:16px}.media{display:flex;align-items:center;gap:18px}.thumb{width:194px;height:102px;border-radius:10px;color:#fff;padding:16px 15px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;background:linear-gradient(135deg,#5a1426,#d45547,#18090d)}
+.thumb-cross{background:linear-gradient(145deg,#321b17,#d97945 58%,#1b100c)}.thumb-sunset{background:linear-gradient(145deg,#38211b,#db8e4d 55%,#1b2a2e)}
+.thumb b{font-size:17px}.thumb span{font-size:14px;margin-top:3px}.thumb i{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);font-style:normal;background:#e62e2e;border-radius:10px;padding:6px 9px}
+.media a{display:block;color:#075fc2;font-size:15px;margin-bottom:11px}.media button{border:0;background:#11634e;color:#fff;border-radius:9px;padding:12px 18px;font-size:14px;cursor:pointer}.media button:hover{background:#0b4b3c}
+.arrow{font-size:38px;color:#33415b}.call .arrow,.communion .arrow{justify-self:end}
+footer{height:45px;background:#e9f0ef;display:flex;justify-content:space-between;align-items:center;padding:0 24px;color:#53636b;font-size:12px}
+@media(max-width:1050px){.layout{grid-template-columns:190px 1fr}.liturgia-card{grid-template-columns:80px 1fr 30px}.media{grid-column:2}.search{width:260px}}
+@media(max-width:760px){.topbar{height:auto;padding:16px 18px;flex-wrap:wrap}.top-actions{width:100%}.search{flex:1;width:auto}.layout{display:block}.sidebar{border-radius:0;padding:12px 15px}.sidebar nav{flex-direction:row;overflow:auto}.sidebar h2{display:none}.sidebar a{white-space:nowrap}.content{padding:12px}.hero{height:180px}.hero h1{font-size:34px}.hero p{font-size:17px}.liturgia-card{grid-template-columns:60px 1fr 25px;padding:14px}.icon{width:55px;height:55px;font-size:24px}.card-text h2{font-size:20px}.card-text h3{font-size:16px}.media{grid-column:1/-1}.thumb{width:145px;height:80px}footer{display:none}}
+@media(max-width:500px){.brand strong{font-size:23px}.brand span{font-size:10px}.hymnal{display:none}.media{flex-direction:column;align-items:flex-start}.thumb{width:100%}.hero-overlay{padding:25px}.hero h1{font-size:29px}}
