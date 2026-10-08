@@ -15,7 +15,7 @@ body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;c
 .sidebar h2{font-family:Georgia,serif;margin:8px 0 28px;font-size:22px}.sidebar nav{display:flex;flex-direction:column;gap:9px}
 .sidebar a{text-decoration:none;color:#46566c;padding:15px 18px;border-radius:11px;font-size:17px;font-weight:600}
 .sidebar a.active{background:#d9eae6;color:#155847}.content{padding:14px 18px 25px 0}
-.hero{height:193px;border-radius:13px;overflow:hidden;margin-bottom:14px;background:
+.hero{height:193px;border-radius:13px;overflow:hidden;margin-bottom:14px;background-image: url("img/images.jpeg");
 linear-gradient(90deg,#171714e8,#3a2b1c99,#17110a55),
 radial-gradient(circle at 70% 25%,#e8d1a0 0 5%,transparent 6%),
 linear-gradient(135deg,#30271d,#aa794c 50%,#201810)}
